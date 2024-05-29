@@ -10,8 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createBalance = exports.getBalances = void 0;
-const database_1 = require("../database");
-const Balance_1 = require("../models/Balance");
+const database_1 = require("../utils/database");
+const Balance_1 = require("../domain/Balance");
 const getBalances = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const balances = yield database_1.AppDataSource.getRepository(Balance_1.Balance).find();

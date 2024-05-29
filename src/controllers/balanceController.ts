@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { AppDataSource } from '../database';
-import { Balance } from '../models/Balance';
+import { AppDataSource } from '../utils/database';
+import { Balance } from '../domain/Balance';
 
 export const getBalances = async (req: Request, res: Response) => {
   try {

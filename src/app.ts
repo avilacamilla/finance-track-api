@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import express from 'express';
-import balanceRoutes from './routes/balanceRoutes';
-import { AppDataSource } from './database';
+import balanceRoutes from './api/routes/balanceRoutes';
+import { AppDataSource } from './utils/database';
 
 const app = express();
 

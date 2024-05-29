@@ -1,5 +1,5 @@
 import { DataSource } from 'typeorm';
-import { Balance } from './models/Balance';
+import { Balance } from '../domain/Balance';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',

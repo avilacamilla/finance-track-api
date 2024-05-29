@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
 const express_1 = __importDefault(require("express"));
-const balanceRoutes_1 = __importDefault(require("./routes/balanceRoutes"));
-const database_1 = require("./database");
+const balanceRoutes_1 = __importDefault(require("./api/routes/balanceRoutes"));
+const database_1 = require("./utils/database");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 // Conectar as rotas
